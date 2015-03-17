@@ -1,0 +1,24 @@
+{
+  "name": "basal",
+  "version": "0.0.1",
+  "description": "A simple utility library. Provides functions for identifying JavaScript types and parameter validation.",
+  "author": "Michael Krasnovsky <mkrasnovsky@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha",
+    "devel": "webpack-dev-server -d --colors --progress --config=webpack.test.config.js",
+    "dist": "webpack -p --progress --colors",
+    "dist-dev": "webpack -d --progress --colors --output-file=basal.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/protolab/basal.git"
+  },
+  "devDependencies": {
+    "chai": "^2.1.2",
+    "mocha": "^2.2.1",
+    "mocha-loader": "^0.7.1",
+    "webpack": "^1.7.3",
+    "webpack-dev-server": "^1.7.0"
+  }
+}
